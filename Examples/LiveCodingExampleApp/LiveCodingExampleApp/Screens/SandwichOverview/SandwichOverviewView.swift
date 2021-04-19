@@ -1,7 +1,10 @@
 import ComposableArchitecture
+import ComposableNavigator
 import SwiftUI
 
 struct SandwichOverviewView: View {
+    @Environment(\.currentScreenID) var currentScreenID
+
     let store: Store<SandwichOverviewState, SandwichOverviewAction>
 
     var body: some View {
@@ -10,7 +13,10 @@ struct SandwichOverviewView: View {
                 Button(
                     action: {
                         viewStore.send(
-                            .selectSandwich(with: sandwich.id)
+                            .selectSandwich(
+                                with: sandwich.id,
+                                on: currentScreenID
+                            )
                         )
                     },
                     label: {

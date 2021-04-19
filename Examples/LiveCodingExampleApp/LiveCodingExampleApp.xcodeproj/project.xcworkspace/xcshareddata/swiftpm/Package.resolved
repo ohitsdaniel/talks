@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "swift-composable-navigator",
+        "repositoryURL": "https://github.com/Bahn-X/swift-composable-navigator.git",
+        "state": {
+          "branch": null,
+          "revision": "2d139ba1a955f702ad3e63710ec64efab4073211",
+          "version": "0.2.0"
+        }
+      },
+      {
         "package": "Tagged",
         "repositoryURL": "https://github.com/pointfreeco/swift-tagged.git",
         "state": {

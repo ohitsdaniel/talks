@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		2330C7DB262DD5BE0066EEF2 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 2330C7DA262DD5BE0066EEF2 /* Tagged */; };
 		2330C7E0262DD90E0066EEF2 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7DF262DD90E0066EEF2 /* ChipView.swift */; };
-		2330C7E9262DE76F0066EEF2 /* DetailDeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7E8262DE76F0066EEF2 /* DetailDeeplinkHandler.swift */; };
+		2330C7E9262DE76F0066EEF2 /* SandwichDetailDeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7E8262DE76F0066EEF2 /* SandwichDetailDeeplinkParser.swift */; };
+		2330C7F2262DF6F00066EEF2 /* ComposableNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 2330C7F1262DF6F00066EEF2 /* ComposableNavigator */; };
+		2330C7F4262DF6F00066EEF2 /* ComposableNavigatorTCA in Frameworks */ = {isa = PBXBuildFile; productRef = 2330C7F3262DF6F00066EEF2 /* ComposableNavigatorTCA */; };
+		2330C7F6262DF6F00066EEF2 /* ComposableDeeplinking in Frameworks */ = {isa = PBXBuildFile; productRef = 2330C7F5262DF6F00066EEF2 /* ComposableDeeplinking */; };
+		2330C7FB262DF7800066EEF2 /* SandwichDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7FA262DF7800066EEF2 /* SandwichDetailScreen.swift */; };
+		2330C800262DF7ED0066EEF2 /* SandwichOverviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7FF262DF7ED0066EEF2 /* SandwichOverviewScreen.swift */; };
+		2330C808262E03630066EEF2 /* AppDeeplinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C807262E03630066EEF2 /* AppDeeplinkParser.swift */; };
 		23E60126262DC31900E05C42 /* LiveCodingExampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E60125262DC31900E05C42 /* LiveCodingExampleAppApp.swift */; };
 		23E6012A262DC31900E05C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E60129262DC31900E05C42 /* Assets.xcassets */; };
 		23E6012D262DC31900E05C42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E6012C262DC31900E05C42 /* Preview Assets.xcassets */; };
@@ -48,7 +54,10 @@
 
 /* Begin PBXFileReference section */
 		2330C7DF262DD90E0066EEF2 /* ChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
-		2330C7E8262DE76F0066EEF2 /* DetailDeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeeplinkHandler.swift; sourceTree = "<group>"; };
+		2330C7E8262DE76F0066EEF2 /* SandwichDetailDeeplinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichDetailDeeplinkParser.swift; sourceTree = "<group>"; };
+		2330C7FA262DF7800066EEF2 /* SandwichDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichDetailScreen.swift; sourceTree = "<group>"; };
+		2330C7FF262DF7ED0066EEF2 /* SandwichOverviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandwichOverviewScreen.swift; sourceTree = "<group>"; };
+		2330C807262E03630066EEF2 /* AppDeeplinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeeplinkParser.swift; sourceTree = "<group>"; };
 		23E60122262DC31800E05C42 /* LiveCodingExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCodingExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E60125262DC31900E05C42 /* LiveCodingExampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCodingExampleAppApp.swift; sourceTree = "<group>"; };
 		23E60129262DC31900E05C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +88,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2330C7DB262DD5BE0066EEF2 /* Tagged in Frameworks */,
+				2330C7F2262DF6F00066EEF2 /* ComposableNavigator in Frameworks */,
+				2330C7F6262DF6F00066EEF2 /* ComposableDeeplinking in Frameworks */,
+				2330C7F4262DF6F00066EEF2 /* ComposableNavigatorTCA in Frameworks */,
 				23E60158262DC47100E05C42 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,7 +115,8 @@
 		2330C7E7262DE7640066EEF2 /* Deeplinks */ = {
 			isa = PBXGroup;
 			children = (
-				2330C7E8262DE76F0066EEF2 /* DetailDeeplinkHandler.swift */,
+				2330C7E8262DE76F0066EEF2 /* SandwichDetailDeeplinkParser.swift */,
+				2330C807262E03630066EEF2 /* AppDeeplinkParser.swift */,
 			);
 			path = Deeplinks;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 			children = (
 				23E60172262DC5A100E05C42 /* SandwichOverviewView.swift */,
 				23E6017D262DC63300E05C42 /* SandwichOverviewCore.swift */,
+				2330C7FF262DF7ED0066EEF2 /* SandwichOverviewScreen.swift */,
 			);
 			path = SandwichOverview;
 			sourceTree = "<group>";
@@ -203,6 +217,7 @@
 			children = (
 				23E60194262DC6A300E05C42 /* SandwichDetailView.swift */,
 				23E6018F262DC69300E05C42 /* SandwichDetailCore.swift */,
+				2330C7FA262DF7800066EEF2 /* SandwichDetailScreen.swift */,
 			);
 			path = SandwichDetail;
 			sourceTree = "<group>";
@@ -245,6 +260,9 @@
 			packageProductDependencies = (
 				23E60157262DC47100E05C42 /* ComposableArchitecture */,
 				2330C7DA262DD5BE0066EEF2 /* Tagged */,
+				2330C7F1262DF6F00066EEF2 /* ComposableNavigator */,
+				2330C7F3262DF6F00066EEF2 /* ComposableNavigatorTCA */,
+				2330C7F5262DF6F00066EEF2 /* ComposableDeeplinking */,
 			);
 			productName = LiveCodingExampleApp;
 			productReference = 23E60122262DC31800E05C42 /* LiveCodingExampleApp.app */;
@@ -320,6 +338,7 @@
 			packageReferences = (
 				23E60156262DC47100E05C42 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				2330C7D9262DD5BE0066EEF2 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+				2330C7F0262DF6F00066EEF2 /* XCRemoteSwiftPackageReference "swift-composable-navigator" */,
 			);
 			productRefGroup = 23E60123262DC31800E05C42 /* Products */;
 			projectDirPath = "";
@@ -373,10 +392,13 @@
 				23E601BF262DCB5E00E05C42 /* ChipColorProvider.swift in Sources */,
 				23E60173262DC5A100E05C42 /* SandwichOverviewView.swift in Sources */,
 				23E6017E262DC63300E05C42 /* SandwichOverviewCore.swift in Sources */,
+				2330C7FB262DF7800066EEF2 /* SandwichDetailScreen.swift in Sources */,
 				23E60169262DC4C100E05C42 /* Bread.swift in Sources */,
-				2330C7E9262DE76F0066EEF2 /* DetailDeeplinkHandler.swift in Sources */,
+				2330C7E9262DE76F0066EEF2 /* SandwichDetailDeeplinkParser.swift in Sources */,
+				2330C808262E03630066EEF2 /* AppDeeplinkParser.swift in Sources */,
 				23E601C7262DCE0D00E05C42 /* ChipLocalisationProvider.swift in Sources */,
 				23E60190262DC69300E05C42 /* SandwichDetailCore.swift in Sources */,
+				2330C800262DF7ED0066EEF2 /* SandwichOverviewScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +722,14 @@
 				minimumVersion = 0.5.0;
 			};
 		};
+		2330C7F0262DF6F00066EEF2 /* XCRemoteSwiftPackageReference "swift-composable-navigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bahn-X/swift-composable-navigator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 		23E60156262DC47100E05C42 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
@@ -715,6 +745,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2330C7D9262DD5BE0066EEF2 /* XCRemoteSwiftPackageReference "swift-tagged" */;
 			productName = Tagged;
+		};
+		2330C7F1262DF6F00066EEF2 /* ComposableNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2330C7F0262DF6F00066EEF2 /* XCRemoteSwiftPackageReference "swift-composable-navigator" */;
+			productName = ComposableNavigator;
+		};
+		2330C7F3262DF6F00066EEF2 /* ComposableNavigatorTCA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2330C7F0262DF6F00066EEF2 /* XCRemoteSwiftPackageReference "swift-composable-navigator" */;
+			productName = ComposableNavigatorTCA;
+		};
+		2330C7F5262DF6F00066EEF2 /* ComposableDeeplinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2330C7F0262DF6F00066EEF2 /* XCRemoteSwiftPackageReference "swift-composable-navigator" */;
+			productName = ComposableDeeplinking;
 		};
 		23E60157262DC47100E05C42 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
