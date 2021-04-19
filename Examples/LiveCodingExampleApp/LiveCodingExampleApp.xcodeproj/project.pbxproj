@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2330C7DB262DD5BE0066EEF2 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 2330C7DA262DD5BE0066EEF2 /* Tagged */; };
 		2330C7E0262DD90E0066EEF2 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7DF262DD90E0066EEF2 /* ChipView.swift */; };
+		2330C7E9262DE76F0066EEF2 /* DetailDeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2330C7E8262DE76F0066EEF2 /* DetailDeeplinkHandler.swift */; };
 		23E60126262DC31900E05C42 /* LiveCodingExampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E60125262DC31900E05C42 /* LiveCodingExampleAppApp.swift */; };
 		23E6012A262DC31900E05C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E60129262DC31900E05C42 /* Assets.xcassets */; };
 		23E6012D262DC31900E05C42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E6012C262DC31900E05C42 /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		2330C7DF262DD90E0066EEF2 /* ChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
+		2330C7E8262DE76F0066EEF2 /* DetailDeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeeplinkHandler.swift; sourceTree = "<group>"; };
 		23E60122262DC31800E05C42 /* LiveCodingExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCodingExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E60125262DC31900E05C42 /* LiveCodingExampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCodingExampleAppApp.swift; sourceTree = "<group>"; };
 		23E60129262DC31900E05C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2330C7E7262DE7640066EEF2 /* Deeplinks */ = {
+			isa = PBXGroup;
+			children = (
+				2330C7E8262DE76F0066EEF2 /* DetailDeeplinkHandler.swift */,
+			);
+			path = Deeplinks;
+			sourceTree = "<group>";
+		};
 		23E60119262DC31800E05C42 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		23E60124262DC31800E05C42 /* LiveCodingExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				2330C7E7262DE7640066EEF2 /* Deeplinks */,
 				23E601A2262DCA1A00E05C42 /* Views */,
 				23E60177262DC5C600E05C42 /* Screens */,
 				23E6015D262DC49200E05C42 /* Model */,
@@ -363,6 +374,7 @@
 				23E60173262DC5A100E05C42 /* SandwichOverviewView.swift in Sources */,
 				23E6017E262DC63300E05C42 /* SandwichOverviewCore.swift in Sources */,
 				23E60169262DC4C100E05C42 /* Bread.swift in Sources */,
+				2330C7E9262DE76F0066EEF2 /* DetailDeeplinkHandler.swift in Sources */,
 				23E601C7262DCE0D00E05C42 /* ChipLocalisationProvider.swift in Sources */,
 				23E60190262DC69300E05C42 /* SandwichDetailCore.swift in Sources */,
 			);
