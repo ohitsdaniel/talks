@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "44159D1A-31CB-4AD4-B790-DCE76A1D6875",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/packages\/Core",
+        "identifier" : "CoreTests",
+        "name" : "CoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
