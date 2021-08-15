@@ -1,2 +1,7 @@
-# swift-composable-navigator-talks
-This repository contains presentations I held about [the Composable Navigator](https://github.com/Bahn-X/swift-composable-navigator) and the demo code used in those presentations.
+# talks
+A place where I archive all my talks and accompanying demo code.
+
+# List of talks
+* CocoaHeads Cologne: [Introduction to Composable Navigator](https://github.com/Bahn-X/swift-composable-navigator) 
+    - [Presentation](/Presentations/2021:04:19%20-%20Cologne.key)
+    - [Live Coding Results](https://github.com/ohitsdaniel/talks/pull/1)
